@@ -1,0 +1,15 @@
+D:\CSharpProjects\Numbers\bin\Debug\net6.0\Numbers.exe
+D:\CSharpProjects\Numbers\bin\Debug\net6.0\Numbers.deps.json
+D:\CSharpProjects\Numbers\bin\Debug\net6.0\Numbers.runtimeconfig.json
+D:\CSharpProjects\Numbers\bin\Debug\net6.0\Numbers.dll
+D:\CSharpProjects\Numbers\bin\Debug\net6.0\Numbers.pdb
+D:\CSharpProjects\Numbers\obj\Debug\net6.0\Numbers.csproj.AssemblyReference.cache
+D:\CSharpProjects\Numbers\obj\Debug\net6.0\Numbers.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharpProjects\Numbers\obj\Debug\net6.0\Numbers.AssemblyInfoInputs.cache
+D:\CSharpProjects\Numbers\obj\Debug\net6.0\Numbers.AssemblyInfo.cs
+D:\CSharpProjects\Numbers\obj\Debug\net6.0\Numbers.csproj.CoreCompileInputs.cache
+D:\CSharpProjects\Numbers\obj\Debug\net6.0\Numbers.dll
+D:\CSharpProjects\Numbers\obj\Debug\net6.0\refint\Numbers.dll
+D:\CSharpProjects\Numbers\obj\Debug\net6.0\Numbers.pdb
+D:\CSharpProjects\Numbers\obj\Debug\net6.0\Numbers.genruntimeconfig.cache
+D:\CSharpProjects\Numbers\obj\Debug\net6.0\ref\Numbers.dll
