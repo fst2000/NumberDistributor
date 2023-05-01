@@ -1,4 +1,4 @@
-public interface IPrinter
+public interface IPrinter<T>
 {
-    void Print(string text);
+    void Print(T element);
 }

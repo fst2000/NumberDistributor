@@ -1,8 +1,11 @@
-public class ConsolePrinter : IPrinter
+public class ConsolePrinter<T> : IPrinter<T>
 {
-    public void Print(string text)
+    public void Print(T text)
     {
-        Console.SetCursorPosition(0,Console.CursorTop);
-        Console.Write(text);
+        if(text != null)
+        {
+            Console.SetCursorPosition(0,Console.CursorTop);
+            Console.Write(text.ToString());
+        }
     }
 }
