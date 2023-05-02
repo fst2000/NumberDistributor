@@ -1,14 +1,14 @@
-public class ArrayCollection<T> : ICollection<T>
+public class ArrayCollection : ICollection
 {
-    T[] array;
+    int[] array;
 
-    public ArrayCollection(T[] array)
+    public ArrayCollection(int[] array)
     {
         this.array = array;
     }
 
-    public void Read(IReader<T> reader)
+    public void Give(IConsumer consumer)
     {
-        foreach(T a in array) reader.Read(a);
+        foreach(int a in array) consumer.Consume(a);
     }
 }

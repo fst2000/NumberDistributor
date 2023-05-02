@@ -1,4 +1,4 @@
-public interface ICollection<T>
+public interface ICollection
 {
-    void Read(IReader<T> reader);
+    void Give(IConsumer consumer);
 }
