@@ -3,6 +3,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        new MinMaxAverageCollection(new ArrayCollection(args.Select(int.Parse).ToArray())).Give(new ConsoleConsumer());
+        ConditionDelegate condition = delegate (int i, int compareTo) { return i < compareTo;};
+        new CollectionDistributor(new ArrayCollection(args.Select(int.Parse).ToArray()), condition).Give(new ConsoleConsumer());
     }
 }

@@ -21,9 +21,9 @@ public class MinCollection : ICollection
     }
     public void Give(IConsumer consumer)
     {
-        var minSearcherConsumer = new MinConsumer();
-        collection.Give(minSearcherConsumer);
-        minSearcherConsumer.Give(consumer);
+        var minConsumer = new MinConsumer();
+        collection.Give(minConsumer);
+        minConsumer.Give(consumer);
     }
 
 }
