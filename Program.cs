@@ -3,7 +3,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        ConditionDelegate condition = delegate (int i, int compareTo) { return i < compareTo;};
-        new CollectionDistributor(new ArrayCollection(args.Select(int.Parse).ToArray()), condition).Give(new ConsoleConsumer());
+        var array = args.Select(int.Parse).ToArray();
+        new ConsoleCollectionStatus().Status(new ArrayCollection(array));
+
     }
 }

@@ -1,1 +1,0 @@
-public delegate bool ConditionDelegate(int i, int compareWith);
