@@ -1,11 +1,16 @@
-public class ConsoleCollectionStatus : ICollectionStatus
+public class CollectionStatusPrinter
 {
+    ICollection collection;
+    public CollectionStatusPrinter(ICollection collection)
+    {
+        this.collection = collection;
+    }
     int min = int.MaxValue;
     int max = int.MinValue;
     int sum;
     int count;
     bool hasElement;
-    public void Status(ICollection collection)
+    public void Status(IPrinter printer)
     {
         collection.Give(new DelegateConsumer(i =>
         {
@@ -15,12 +20,9 @@ public class ConsoleCollectionStatus : ICollectionStatus
             count++;
             hasElement = true;
         }));
-        IConsumer consumer = new ConsoleConsumer();
         if(hasElement)
         {
-            consumer.Consume(sum/count);
-            consumer.Consume(min);
-            consumer.Consume(max);
+            printer.Print("\nMin: " + min + "\nMax: " + max + "\nAverage: " + sum/count);
         }
     }
 }
