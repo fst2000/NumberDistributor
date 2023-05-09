@@ -16,8 +16,11 @@ public class ConsoleCollectionStatus : ICollectionStatus
             hasElement = true;
         }));
         IConsumer consumer = new ConsoleConsumer();
-        consumer.Consume(min);
-        consumer.Consume(max);
-        if(hasElement)consumer.Consume(sum/count);
+        if(hasElement)
+        {
+            consumer.Consume(sum/count);
+            consumer.Consume(min);
+            consumer.Consume(max);
+        }
     }
 }
