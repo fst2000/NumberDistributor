@@ -1,4 +1,4 @@
-public class ConsolePrinter : IPrinter
+public class ConsolePrinter : ITextPrinter
 {
     public void Print(string text)
     {

@@ -1,4 +1,4 @@
-public interface IPrinter
+public interface ITextPrinter
 {
     void Print(string text);
 }

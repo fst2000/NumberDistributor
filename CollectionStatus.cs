@@ -1,7 +1,7 @@
-public class CollectionStatusPrinter
+public class CollectionStatus
 {
     ICollection collection;
-    public CollectionStatusPrinter(ICollection collection)
+    public CollectionStatus(ICollection collection)
     {
         this.collection = collection;
     }
@@ -10,7 +10,7 @@ public class CollectionStatusPrinter
     int sum;
     int count;
     bool hasElement;
-    public void Status(IPrinter printer)
+    public void Status(StatusDelegate statusDelegate)
     {
         collection.Give(new DelegateConsumer(i =>
         {
@@ -22,7 +22,8 @@ public class CollectionStatusPrinter
         }));
         if(hasElement)
         {
-            printer.Print("\nMin: " + min + "\nMax: " + max + "\nAverage: " + sum/count);
+            statusDelegate(min,max,sum/count);
         }
     }
 }
+public delegate void StatusDelegate(int min, int max, int average);
